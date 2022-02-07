@@ -226,8 +226,8 @@ ul li:nth-child(7){
 }
 .dot{
  position:absolute;
-  top:210%;
-  left:64%;
+  top:190%;
+  left:50%;
   transform:translate(-50%,-50%);
   margin:0;
   padding:0;
@@ -235,8 +235,8 @@ ul li:nth-child(7){
 }
 .dot-new{
  position:absolute;
-  top:110%;
-  left:64%;
+  top:120%;
+  left:49%;
   transform:translate(-50%,-50%);
   margin:0;
   padding:0;
@@ -363,7 +363,7 @@ h2 {
 
 
 .card .info .btn:hover{box-shadow: 0px 7px 10px rgba(0,0,0,0.5);}
-@media screen and (max-width:700px){
+@media screen and (max-width:700px ){
 	.logo{opacity:0;}
 	#topbar{
     position:relative;
@@ -404,4 +404,47 @@ opacity:0;
 }
 	ul{margin-top:10px;
 	}
+}
+@media screen and (max-height:700px ){
+	.logo{opacity:0;}
+	#topbar{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-color:#ecf4fb;
+    margin-right:180px;
+    margin-top:-30px;
+    left:-940px;
+    transition:all 0.5s ease-in-out;
+    transform:translateX(0) rotate(0deg);
 	
+}
+	h2{align-items:center;
+	margin-right:60px;
+	margin-top:90px;
+	font-size:20px;
+	}
+.topbar-section{
+float:left;
+border-left:1px #ecf4fb;
+height:100%;
+}
+#rklogo{
+opacity:0;
+}
+.img-gallery{
+	grid-template-columns:1fr 1fr 1fr;
+}
+.dot{
+	margin-top:-40px;
+	margin-left:-60px;
+}
+.new{margin-top:-385px;}
+.dot-new{
+	margin-top:-78px;
+	margin-left:-15px;
+}
+	ul{margin-top:10px;
+	}
+}
