@@ -262,9 +262,9 @@ ul li:nth-child(7){
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
     h1 {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 }
 
@@ -297,15 +297,16 @@ img {
     float: right;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 700px) {
     .box {
         height: 200px;
     }
 }
 
-@media (max-width: 950px) and (min-width: 450px) {
+@media (max-width: 950px) and (min-width: 700px) {
     .box {
         text-align: center;
+		
         height: 180px;
     }
 }
@@ -329,7 +330,7 @@ h2 {
 }
 
 
-@media (min-width: 950px) {
+@media (min-width: 700px) {
     .row1-container {
         display: flex;
         justify-content: center;
@@ -362,3 +363,45 @@ h2 {
 
 
 .card .info .btn:hover{box-shadow: 0px 7px 10px rgba(0,0,0,0.5);}
+@media screen and (max-width:700px){
+	.logo{opacity:0;}
+	#topbar{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-color:#ecf4fb;
+    margin-right:180px;
+    margin-top:-30px;
+    left:-940px;
+    transition:all 0.5s ease-in-out;
+    transform:translateX(0) rotate(0deg);
+	
+}
+	h2{align-items:center;
+	margin-right:60px;
+	margin-top:90px;
+	font-size:20px;
+	}
+.topbar-section{
+float:left;
+border-left:1px #ecf4fb;
+height:100%;
+}
+#rklogo{
+opacity:0;
+}
+.img-gallery{
+	grid-template-columns:1fr 1fr 1fr;
+}
+.dot{
+	margin-top:-40px;
+	margin-left:-60px;
+}
+.dot-new{
+	margin-top:175px;
+	margin-left:-65px;
+}
+	ul{margin-top:10px;
+	}
+	
