@@ -360,6 +360,50 @@ h2 {
 	width:70px;
 	height:80px;
 }
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.6rem 3rem;
+  border: 3px solid black;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+  color:inherit;
+  font-family:inherit;
+  font-size: inherit;
+  background:#ecf4fb;
+  padding: 0.3rem 0.4rem;
+  border: 1px solid black;
+  margin-right: 2rem;
+  box-shadow: 0 0 0 black;
+  transition: all 0.2s;
+}
+
+.btn:last-child {
+  margin: 0;
+}
+
+.btn:hover {
+  box-shadow: 0.2rem 0.2rem 0 black;
+  transform: translate(-0.2rem, -0.4rem);
+}
+
+.btn:active {
+  box-shadow: 0 0 0 black;
+  transform: translate(0, 0);
+}
+
+
+
 
 
 .card .info .btn:hover{box-shadow: 0px 7px 10px rgba(0,0,0,0.5);}
@@ -388,22 +432,13 @@ float:left;
 border-left:1px #ecf4fb;
 height:100%;
 }
+
 #rklogo{
 opacity:0;
 }
 .img-gallery{
 	grid-template-columns:1fr 1fr 1fr;
 }
-.dot{
-	margin-top:-40px;
-	margin-left:-60px;
-}
-.dot-new{
-	margin-top:175px;
-	margin-left:-65px;
-}
-	ul{margin-top:10px;
-	}
 }
 @media screen and (max-height:700px ){
 	.logo{opacity:0;}
@@ -436,15 +471,4 @@ opacity:0;
 .img-gallery{
 	grid-template-columns:1fr 1fr 1fr;
 }
-.dot{
-	margin-top:-40px;
-	margin-left:-60px;
-}
-.new{margin-top:-385px;}
-.dot-new{
-	margin-top:-78px;
-	margin-left:-15px;
-}
-	ul{margin-top:10px;
-	}
 }
